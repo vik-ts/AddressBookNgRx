@@ -1,0 +1,8 @@
+.btn-add {
+  position: absolute;
+  bottom: 0px;
+}
+
+.border-red {
+  border:solid red 1px;
+}

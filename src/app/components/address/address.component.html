@@ -1,0 +1,27 @@
+<form [formGroup]="addressForm" (submit)="addressForm.valid ? addAddress() : formIsValid = false">
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputSurname">Фамилия</label>
+      <input type="text" class="form-control" id="inputSurname" formControlName="surname"
+        [class.border-red]="addressForm.get('surname').invalid && !formIsValid">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputName">Имя</label>
+      <input type="text" class="form-control" id="inputName" formControlName="name">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputPatronymic">Отчество</label>
+      <input type="text" class="form-control" id="inputPatronymic" formControlName="patronymic">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputPhone">Телефон</label>
+      <input type="tel" class="form-control" id="inputPhone" formControlName="phone"
+        [textMask]="{mask: phoneMask}" [class.border-red]="addressForm.get('phone').invalid  && !formIsValid">
+    </div>
+    <div class="form-group col-1 flex-bottom">
+      <button type="submit" class="btn btn-success btn-add">+</button>
+    </div>
+  </div>
+</form>
+
+<app-address-table></app-address-table>

@@ -1,0 +1,27 @@
+.close {
+  color: red;
+}
+
+.icon {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  height: 24px;
+  padding: 0;
+  width: 24px;
+  text-decoration: none;
+  transition: all 0.15s linear;
+  border: none;
+}
+
+.icon--favorites-yes {
+  background-image: url("../../../assets/img/ico_favorites-yes.svg");
+}
+
+.icon--favorites-no {
+  background-image: url("../../../assets/img/ico_favorites-no.svg");
+}
