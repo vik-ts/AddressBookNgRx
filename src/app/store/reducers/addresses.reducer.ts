@@ -1,7 +1,6 @@
 import { Address } from '../../models/address';
 import * as fromAddress from '../actions';
 
-
 export interface AddressesState {
   loading: boolean;
   addresses: Address[];
