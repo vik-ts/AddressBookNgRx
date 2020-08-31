@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as fromStore from '../../store';
-import { Address } from '../../models/Address';
+import { Address } from '../../models/address';
 
 @Component({
   selector: 'app-address-table',

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { AddressTableComponent } from './address-table.component';
-import { By } from '@Angular/platform-browser';
+import { By } from '@angular/platform-browser';
 
 describe('AddressTableComponent', () => {
   let component: AddressTableComponent;
